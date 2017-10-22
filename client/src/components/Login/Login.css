@@ -3,7 +3,7 @@
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
   grid-row-gap: 15px;
-  padding: 100px 60px;
+  padding: 20px 60px;
 }
 
 .title {
@@ -16,10 +16,6 @@
 .field {
   grid-column: 1 / 1;
   font-size: 1rem;
-}
-
-button {
-  font-size: 100%;
 }
 
 .input {
@@ -37,11 +33,7 @@ button {
 }
 
 .buttonSubmit {
-  composes: field;
+  composes: field button from '../_shared/button.css';
   grid-row: 4;
   padding: 20px;
-  border: 0;
-  border-radius: 5px;
-  color: white;
-  background-color: royalblue;
 }
